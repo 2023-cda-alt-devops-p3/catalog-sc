@@ -9,7 +9,7 @@
 }
 
 body{
-    background-color: #f3f5f9;
+    background-color: white;
 }
 
 .wrapper{
@@ -23,6 +23,7 @@ body{
     padding: 30px 0;
     background-color: #E79057;
     color: white;
+    margin-left: -250px; 
 }
 
 .wrapper .sidebar h2 {
@@ -35,6 +36,7 @@ body{
     margin-bottom: 10px;
     text-align: center;
     font-size: 16px;
+    cursor: pointer;
 } 
 
 .wrapper .sidebar ul li{
@@ -48,4 +50,56 @@ body{
 
 .wrapper .sidebar ul{
     margin-bottom: 20px;
+}
+
+.header{
+    font-size: 30px;
+    font-weight: 600;
+    margin-left: 60px;
+    margin-top: 50px;
+    background-color: #e6e6e6cf;
+    width: 250px;
+    height: 80px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content{
+    margin-left: 60px;
+    margin-top: 20px;
+    font-size: 14px;
+    background-color: #e6e6e6cf;
+    height: 100px;
+    width: 250px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+i{
+    margin-top: 30px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.hidden{
+    display: none;
+}
+
+.cross{
+    position: relative;
+    left: 180px;
+    top: -30px;
 }
