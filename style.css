@@ -23,6 +23,7 @@ body{
     padding: 30px 0;
     background-color: #E79057;
     color: white;
+    margin-left: -250px; 
 }
 
 .wrapper .sidebar h2 {
@@ -112,9 +113,6 @@ i{
     top: -30px;
 }
 
-.sidebar-hidden{
-    margin-left: -250px; 
-}
 
 .sidebar-visible{
     margin-left: 0px;
@@ -127,4 +125,18 @@ i{
        width: 400px;
        margin-left: -400px;
    }
+}
+
+@media screen and (min-width:800px) {
+    .header{
+        font-size: 45px;
+        width: 400px;
+        height: 100px;
+    }
+
+    .content{
+        font-size: 18px;
+        width: 500px;
+        height: 100px;
+    }
 }

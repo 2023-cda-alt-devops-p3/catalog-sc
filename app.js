@@ -3,8 +3,7 @@ const button = document.querySelector(".burger");
 const crossBtn = document.querySelector(".cross");
 
 button.addEventListener("click", () => {
-  sideBar.classList.add("sidebar-visible");
-  sideBar.classList.remove("sidebar-hidden");
+  sideBar.classList.toggle("sidebar-visible");
 });
 
 crossBtn.addEventListener("click", () => {
