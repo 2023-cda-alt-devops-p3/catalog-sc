@@ -3,12 +3,11 @@ const button = document.querySelector(".burger");
 const crossBtn = document.querySelector(".cross");
 
 button.addEventListener("click", () => {
-  sideBar.style.marginLeft = "0px";
-  sideBar.style.transition = "0.5s";
-  button.classList.add("hidden");
+  sideBar.classList.add("sidebar-visible");
+  sideBar.classList.remove("sidebar-hidden");
 });
 
 crossBtn.addEventListener("click", () => {
-  sideBar.style.marginLeft = "-250px";
+  sideBar.style.marginLeft = "-400px";
   sideBar.style.transition = "0.5s";
 });
