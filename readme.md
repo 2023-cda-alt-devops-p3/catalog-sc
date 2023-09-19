@@ -2,17 +2,27 @@
 
 ### Merise
 
-- **MCD (Modèle conceptuel des données)**
+##### Diagrammes conceptuel
 
-- MCT (Modèle conceptuel des traitements)
+- Contexte
 
-- **MLD (Modèle logique des données)**
+- **Entités-relations**
 
-- MLT (Modèle logique des traitements)
+- Activités
 
-- **MPD (Modèle physique des données)**
+##### Diagrammes logiques
 
-- MOT (Modèle opérationnel des traitements)
+- **Flux de données**
+
+- Données logiques
+
+- Traitements logiques
+
+##### Diagrammes physiques
+
+- Données physiques
+
+- Traitements physiques
 
 ### UML
 
@@ -26,9 +36,9 @@
 
 - **Déploiement**
 
-- **Paquets**
+- Paquets
 
-- **Structure composite**
+- Structure composite
 
 - Profils
 
@@ -36,16 +46,16 @@
 
 - **Cas d'utilisations**
 
-- États-transitions
+- **États-transitions**
 
-- **Activité**
+- Activité
 
 ##### Diagrammes d'interactions
 
 - **Séquences**
 
-- **Communication**
+- Communication
 
-- **Global d'interaction**
+- Global d'interaction
 
-- **Temps**
+- Temps
