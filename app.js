@@ -4,6 +4,7 @@ const classesLink = document.getElementById("classes");
 const objectLink = document.getElementById("objects");
 const componentLink = document.getElementById("component");
 const deployLink = document.getElementById("deploy");
+const packageLink = document.getElementById("packages");
 
 classesLink.addEventListener("click", () => {
   fetch("classes.html")
@@ -31,6 +32,14 @@ componentLink.addEventListener("click", () => {
 
 deployLink.addEventListener("click", () => {
   fetch("deploy.html")
+    .then((response) => response.text())
+    .then((content) => {
+      document.querySelector(".content").innerHTML = content;
+    });
+});
+
+packageLink.addEventListener("click", () => {
+  fetch("packages.html")
     .then((response) => response.text())
     .then((content) => {
       document.querySelector(".content").innerHTML = content;
