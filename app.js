@@ -7,6 +7,7 @@ const deployLink = document.getElementById("deploy");
 const packageLink = document.getElementById("packages");
 const compositeLink = document.getElementById("composite");
 const profileLink = document.getElementById("profile");
+const useCaseLink = document.getElementById("useCase");
 
 classesLink.addEventListener("click", () => {
   fetch("classes.html")
@@ -58,6 +59,14 @@ compositeLink.addEventListener("click", () => {
 
 profileLink.addEventListener("click", () => {
   fetch("profile.html")
+    .then((response) => response.text())
+    .then((content) => {
+      document.querySelector(".content").innerHTML = content;
+    });
+});
+
+useCaseLink.addEventListener("click", () => {
+  fetch("usecase.html")
     .then((response) => response.text())
     .then((content) => {
       document.querySelector(".content").innerHTML = content;
