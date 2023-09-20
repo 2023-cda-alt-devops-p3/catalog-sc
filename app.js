@@ -5,6 +5,7 @@ const objectLink = document.getElementById("objects");
 const componentLink = document.getElementById("component");
 const deployLink = document.getElementById("deploy");
 const packageLink = document.getElementById("packages");
+const compositeLink = document.getElementById("composite");
 
 classesLink.addEventListener("click", () => {
   fetch("classes.html")
@@ -40,6 +41,14 @@ deployLink.addEventListener("click", () => {
 
 packageLink.addEventListener("click", () => {
   fetch("packages.html")
+    .then((response) => response.text())
+    .then((content) => {
+      document.querySelector(".content").innerHTML = content;
+    });
+});
+
+compositeLink.addEventListener("click", () => {
+  fetch("composite.html")
     .then((response) => response.text())
     .then((content) => {
       document.querySelector(".content").innerHTML = content;
