@@ -87,6 +87,11 @@ body{
     margin-bottom: 20px;
 }
 
+.wrapper .sidebar-visible ul{
+    margin-bottom: 20px;
+}
+
+
 .wrapper .sidebar ul li:hover{
     background-color: white;
     color: #E79057;
@@ -184,5 +189,14 @@ i{
         font-size: 18px;
         width: 500px;
         height: 100px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .wrapper .sidebar-visible{
+        top: 0;
+        width: 100%;
+        max-width: 300px;
+        
     }
 }
