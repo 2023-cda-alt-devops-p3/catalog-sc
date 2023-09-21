@@ -18,6 +18,7 @@ const interactionLink = document.getElementById("interaction");
 const timeLink = document.getElementById("time");
 const conceptualLink = document.getElementById("conceptual");
 const logicLink = document.getElementById("logic");
+const physicLink = document.getElementById("physic");
 
 classesLink.addEventListener("click", () => {
   fetch("classes.html")
@@ -141,6 +142,14 @@ conceptualLink.addEventListener("click", () => {
 
 logicLink.addEventListener("click", () => {
   fetch("logic.html")
+    .then((response) => response.text())
+    .then((content) => {
+      document.querySelector(".content").innerHTML = content;
+    });
+});
+
+physicLink.addEventListener("click", () => {
+  fetch("physic.html")
     .then((response) => response.text())
     .then((content) => {
       document.querySelector(".content").innerHTML = content;
