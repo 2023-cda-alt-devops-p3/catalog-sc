@@ -14,6 +14,7 @@ const transitionStateLink = document.getElementById("transitionState");
 const activityLink = document.getElementById("activity");
 const sequenceLink = document.getElementById("sequence");
 const communicationLink = document.getElementById("communication");
+const interactionLink = document.getElementById("interaction");
 
 classesLink.addEventListener("click", () => {
   fetch("classes.html")
@@ -105,6 +106,14 @@ sequenceLink.addEventListener("click", () => {
 
 communicationLink.addEventListener("click", () => {
   fetch("communication.html")
+    .then((response) => response.text())
+    .then((content) => {
+      document.querySelector(".content").innerHTML = content;
+    });
+});
+
+interactionLink.addEventListener("click", () => {
+  fetch("interaction.html")
     .then((response) => response.text())
     .then((content) => {
       document.querySelector(".content").innerHTML = content;
