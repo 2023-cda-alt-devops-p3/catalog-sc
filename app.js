@@ -15,6 +15,7 @@ const activityLink = document.getElementById("activity");
 const sequenceLink = document.getElementById("sequence");
 const communicationLink = document.getElementById("communication");
 const interactionLink = document.getElementById("interaction");
+const timeLink = document.getElementById("time");
 
 classesLink.addEventListener("click", () => {
   fetch("classes.html")
@@ -114,6 +115,14 @@ communicationLink.addEventListener("click", () => {
 
 interactionLink.addEventListener("click", () => {
   fetch("interaction.html")
+    .then((response) => response.text())
+    .then((content) => {
+      document.querySelector(".content").innerHTML = content;
+    });
+});
+
+timeLink.addEventListener("click", () => {
+  fetch("time.html")
     .then((response) => response.text())
     .then((content) => {
       document.querySelector(".content").innerHTML = content;
