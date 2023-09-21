@@ -17,6 +17,7 @@ const communicationLink = document.getElementById("communication");
 const interactionLink = document.getElementById("interaction");
 const timeLink = document.getElementById("time");
 const conceptualLink = document.getElementById("conceptual");
+const logicLink = document.getElementById("logic");
 
 classesLink.addEventListener("click", () => {
   fetch("classes.html")
@@ -132,6 +133,14 @@ timeLink.addEventListener("click", () => {
 
 conceptualLink.addEventListener("click", () => {
   fetch("conceptual.html")
+    .then((response) => response.text())
+    .then((content) => {
+      document.querySelector(".content").innerHTML = content;
+    });
+});
+
+logicLink.addEventListener("click", () => {
+  fetch("logic.html")
     .then((response) => response.text())
     .then((content) => {
       document.querySelector(".content").innerHTML = content;
