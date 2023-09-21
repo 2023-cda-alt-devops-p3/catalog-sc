@@ -10,6 +10,7 @@ const profileLink = document.getElementById("profile");
 const useCaseLink = document.getElementById("useCase");
 const transitionStateLink = document.getElementById("transitionState");
 const activityLink = document.getElementById("activity");
+const sequenceLink = document.getElementById("sequence");
 
 classesLink.addEventListener("click", () => {
   fetch("classes.html")
@@ -85,6 +86,14 @@ transitionStateLink.addEventListener("click", () => {
 
 activityLink.addEventListener("click", () => {
   fetch("activity.html")
+    .then((response) => response.text())
+    .then((content) => {
+      document.querySelector(".content").innerHTML = content;
+    });
+});
+
+sequenceLink.addEventListener("click", () => {
+  fetch("sequence.html")
     .then((response) => response.text())
     .then((content) => {
       document.querySelector(".content").innerHTML = content;

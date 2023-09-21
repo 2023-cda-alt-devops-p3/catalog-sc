@@ -196,7 +196,12 @@ i{
     .wrapper .sidebar-visible{
         top: 0;
         width: 100%;
-        max-width: 300px;
+        height: 100vh;
+        position: fixed;
         
+    }
+
+    .wrapper{
+        display: block;
     }
 }
