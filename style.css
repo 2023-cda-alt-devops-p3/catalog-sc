@@ -145,7 +145,7 @@ i{
 }
 
 .hidden{
-    display: none;
+    display: none !important;
 }
 
 .wrapper .sidebar-visible{
@@ -167,7 +167,7 @@ i{
     position: relative;
     left: 400px;
     top: -30px;
-    display: none;
+
 }
 
 /* 
@@ -199,6 +199,11 @@ i{
         height: 160vh;
         position: absolute;
         
+    }
+
+    .wrapper .sidebar-visible ul li{
+        text-align: center;
+        font-size: 16px;
     }
 
     .cross{
