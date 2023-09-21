@@ -9,6 +9,7 @@ const compositeLink = document.getElementById("composite");
 const profileLink = document.getElementById("profile");
 const useCaseLink = document.getElementById("useCase");
 const transitionStateLink = document.getElementById("transitionState");
+const activityLink = document.getElementById("activity");
 
 classesLink.addEventListener("click", () => {
   fetch("classes.html")
@@ -76,6 +77,14 @@ useCaseLink.addEventListener("click", () => {
 
 transitionStateLink.addEventListener("click", () => {
   fetch("transitionstate.html")
+    .then((response) => response.text())
+    .then((content) => {
+      document.querySelector(".content").innerHTML = content;
+    });
+});
+
+activityLink.addEventListener("click", () => {
+  fetch("activity.html")
     .then((response) => response.text())
     .then((content) => {
       document.querySelector(".content").innerHTML = content;
