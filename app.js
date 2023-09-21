@@ -1,5 +1,7 @@
 const sideBar = document.querySelector(".sidebar");
 const button = document.querySelector(".burger");
+const crossBtn = document.querySelector(".cross");
+
 const classesLink = document.getElementById("classes");
 const objectLink = document.getElementById("objects");
 const componentLink = document.getElementById("component");
@@ -101,6 +103,15 @@ sequenceLink.addEventListener("click", () => {
 });
 
 button.addEventListener("click", () => {
-  sideBar.classList.toggle("sidebar-visible");
-  sideBar.classList.toggle("sidebar");
+  if (window.innerWidth <= 600) {
+    sideBar.classList.add("sidebar-visible");
+    sideBar.classList.add("sidebar");
+  } else {
+    sideBar.classList.toggle("sidebar-visible");
+  }
+});
+
+crossBtn.addEventListener("click", () => {
+  sideBar.style.marginLeft = "-500px";
+  sideBar.style.transition = "0.5s";
 });
