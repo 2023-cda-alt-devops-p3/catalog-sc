@@ -4,27 +4,11 @@
 
 ### Merise
 
-##### Diagrammes conceptuel
+- MCD (Modèle conceptuel de données)
 
-- Contexte
+- MLD (Modèle logique de données)
 
-- **Entités-relations**
-
-- Activités
-
-##### Diagrammes logiques
-
-- **Flux de données**
-
-- Données logiques
-
-- Traitements logiques
-
-##### Diagrammes physiques
-
-- Données physiques
-
-- Traitements physiques
+- MPD (Modèle physique de données)
 
 ### UML
 
