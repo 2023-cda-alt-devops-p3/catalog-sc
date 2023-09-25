@@ -1,5 +1,7 @@
 const sideBar = document.querySelector(".sidebar");
 const button = document.querySelector(".burger");
+const crossBtn = document.querySelector(".cross");
+
 const classesLink = document.getElementById("classes");
 const objectLink = document.getElementById("objects");
 const componentLink = document.getElementById("component");
@@ -9,6 +11,14 @@ const compositeLink = document.getElementById("composite");
 const profileLink = document.getElementById("profile");
 const useCaseLink = document.getElementById("useCase");
 const transitionStateLink = document.getElementById("transitionState");
+const activityLink = document.getElementById("activity");
+const sequenceLink = document.getElementById("sequence");
+const communicationLink = document.getElementById("communication");
+const interactionLink = document.getElementById("interaction");
+const timeLink = document.getElementById("time");
+const conceptualLink = document.getElementById("conceptual");
+const logicLink = document.getElementById("logic");
+const physicLink = document.getElementById("physic");
 
 classesLink.addEventListener("click", () => {
   fetch("classes.html")
@@ -82,7 +92,74 @@ transitionStateLink.addEventListener("click", () => {
     });
 });
 
+activityLink.addEventListener("click", () => {
+  fetch("activity.html")
+    .then((response) => response.text())
+    .then((content) => {
+      document.querySelector(".content").innerHTML = content;
+    });
+});
+
+sequenceLink.addEventListener("click", () => {
+  fetch("sequence.html")
+    .then((response) => response.text())
+    .then((content) => {
+      document.querySelector(".content").innerHTML = content;
+    });
+});
+
+communicationLink.addEventListener("click", () => {
+  fetch("communication.html")
+    .then((response) => response.text())
+    .then((content) => {
+      document.querySelector(".content").innerHTML = content;
+    });
+});
+
+interactionLink.addEventListener("click", () => {
+  fetch("interaction.html")
+    .then((response) => response.text())
+    .then((content) => {
+      document.querySelector(".content").innerHTML = content;
+    });
+});
+
+timeLink.addEventListener("click", () => {
+  fetch("time.html")
+    .then((response) => response.text())
+    .then((content) => {
+      document.querySelector(".content").innerHTML = content;
+    });
+});
+
+conceptualLink.addEventListener("click", () => {
+  fetch("conceptual.html")
+    .then((response) => response.text())
+    .then((content) => {
+      document.querySelector(".content").innerHTML = content;
+    });
+});
+
+logicLink.addEventListener("click", () => {
+  fetch("logic.html")
+    .then((response) => response.text())
+    .then((content) => {
+      document.querySelector(".content").innerHTML = content;
+    });
+});
+
+physicLink.addEventListener("click", () => {
+  fetch("physic.html")
+    .then((response) => response.text())
+    .then((content) => {
+      document.querySelector(".content").innerHTML = content;
+    });
+});
+
 button.addEventListener("click", () => {
   sideBar.classList.toggle("sidebar-visible");
-  sideBar.classList.toggle("sidebar");
+});
+
+crossBtn.addEventListener("click", () => {
+  sideBar.classList.toggle("sidebar-visible");
 });

@@ -1,4 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Tiro+Telugu:ital@0;1&display=swap');
+/* -------------------------- debug -------------------------- */
+
+/* You can comment/uncomment 1 line below for debugging */
+/* Try it 😉 */
+
+/* * {box-shadow: -1px 1px 10px 1px rgba(0, 0, 0, 0.5) inset;} */
+/* body {box-shadow: -1px 1px 10px 3px red inset;} */
+/* header {box-shadow: -1px 1px 10px 3px yellow inset;} */
+/* section {box-shadow: -1px 1px 10px 3px blue inset;} */
+
+/* ----------------------------------------------------------- */
 
 * {
     font-family: 'Inter', sans-serif;
@@ -19,7 +30,7 @@ body{
 
 .wrapper .sidebar{
     width: 250px;
-    height: 100%;
+    height: 100vh;
     padding: 30px 0;
     background-color: #E79057;
     color: white;
@@ -145,15 +156,8 @@ i{
 }
 
 .hidden{
-    display: none;
+    display: none !important;
 }
-
-.cross{
-    position: relative;
-    left: 180px;
-    top: -30px;
-}
-
 
 .wrapper .sidebar-visible{
     width: 250px;
@@ -170,13 +174,18 @@ i{
     -o-transition: all 0.5s;
 }
 
-/* 
-@media screen and (min-width:500px) {
-    .wrapper .sidebar {
-       width: 400px;
-       margin-left: -400px;
-   }
-} */
+.cross{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+
+@media screen and (min-width:600px) {
+    .cross{
+        display: none;
+    }
+} 
 
 @media screen and (min-width:800px) {
     .header{
@@ -196,7 +205,15 @@ i{
     .wrapper .sidebar-visible{
         top: 0;
         width: 100%;
-        max-width: 300px;
+        height: 160vh;
+        position: absolute;
         
     }
+
+    .wrapper .sidebar-visible ul li{
+        text-align: center;
+        font-size: 16px;
+    }
+
+
 }
