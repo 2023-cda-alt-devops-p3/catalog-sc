@@ -10,25 +10,14 @@ body{
 
 .title-pages{
     background-color: #e6e6e6cf;
-    width: 300px;
-    height: 80px;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-size: 25px;
     font-weight: 500;
 }
 
 .main{
     padding-top: 50px;
-    background-color: #e6e6e6;
     margin-top: 300px;
-    height: 800px;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -45,6 +34,7 @@ body{
     font-size: 15px;
     padding: 30px;
     text-align: justify;
+    margin: auto;
 }
 
 img{
@@ -55,4 +45,24 @@ img{
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    
+    .main{
+        width: 100vw;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    img{
+        width: 300px;
+    }
+
+    .content{
+        font-size: 13px;
+    }
 }
