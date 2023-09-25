@@ -175,19 +175,17 @@ i{
 }
 
 .cross{
-    position: relative;
-    left: 400px;
-    top: -30px;
-
+    position: absolute;
+    right: 10px;
+    top: 10px;
 }
 
-/* 
-@media screen and (min-width:500px) {
-    .wrapper .sidebar {
-       width: 400px;
-       margin-left: -400px;
-   }
-} */
+
+@media screen and (min-width:600px) {
+    .cross{
+        display: none;
+    }
+} 
 
 @media screen and (min-width:800px) {
     .header{
@@ -215,12 +213,6 @@ i{
     .wrapper .sidebar-visible ul li{
         text-align: center;
         font-size: 16px;
-    }
-
-    .cross{
-        position: relative;
-        left: 400px;
-        top: -30px;
     }
 
 

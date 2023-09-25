@@ -157,15 +157,9 @@ physicLink.addEventListener("click", () => {
 });
 
 button.addEventListener("click", () => {
-  if (window.innerWidth <= 600) {
-    sideBar.classList.add("sidebar-visible");
-  } else {
-    sideBar.classList.toggle("sidebar-visible");
-    crossBtn.classList.add("hidden");
-  }
+  sideBar.classList.toggle("sidebar-visible");
 });
 
 crossBtn.addEventListener("click", () => {
-  sideBar.style.marginLeft = "-500px";
-  sideBar.style.transition = "0.5s";
+  sideBar.classList.toggle("sidebar-visible");
 });
