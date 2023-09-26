@@ -51,9 +51,9 @@
 ## Git
 
 - [:heavy_check_mark:] Versionné régulièrement et de manière atomique (Plusieurs "commit" par jour pendant toute la durée du projet) => Vérif Git
-- [:x:] Historique de commit propre => (éviter les doublons, les commits inutiles)
+- [:heavy_check_mark:] Historique de commit propre => (éviter les doublons, les commits inutiles)
 - [:heavy_check_mark:] Mise en plance d'une branche de développement supplémentaire, voire plusieurs selon l'architecture du site => Vérif sur Git
-- [:x:] Fonction "pull request" => Check sur Github
+- [:heavy_check_mark:] Fonction "pull request" => Check sur Github
 - [:x:] Mise en place un Github Action (automatisation de tests intégration, vulnérabilité, ...) => Check sur Github
 
 ## Sécurité
@@ -78,12 +78,12 @@
 
 - [:x:] Accessibilité : title, aria-label, alt
 - [:x:] Optimisation des images : poids et formats adaptés
-- [:x:] Fournir un site web avec une bonne expérience utilisateur
+- [:heavy_check_mark:] Fournir un site web avec une bonne expérience utilisateur
 - [:x:] Texte lisible : interlinéage suffisant, taille des polices proportionnelles, contraste des couleurs optimale, ...
 
 ## Architecture
 
-- [:heavy_check_mark:] Bons principes de structuration respectés, y compris pour le web mobile => vérif des balises (body, header, navbar), et des noms de classes CSS, variables, media queries
+- [:x:] Bons principes de structuration respectés, y compris pour le web mobile => vérif des balises (body, header, navbar), et des noms de classes CSS, variables, media queries
 - [:heavy_check_mark:] Eviter les répétitions en utilisant des fonctions => check du code source
 
 ## Contenu
@@ -93,5 +93,5 @@
 
 ## UI/UX
 
-- [:x:] Features d'animations, transitions, barre de navigation => vérif du site
+- [:heavy_check_mark:] Features d'animations, transitions, barre de navigation => vérif du site
 - [:heavy_check_mark:] Design cohérent (couleur, forme, police)
