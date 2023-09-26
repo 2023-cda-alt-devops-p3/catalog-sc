@@ -1,7 +1,7 @@
 const sideBar = document.querySelector(".sidebar");
 const button = document.querySelector(".burger");
 const crossBtn = document.querySelector(".cross");
-const contentContainer = document.querySelector(".content");
+const contentContainer = document.querySelector(".main-content");
 
 const linkIds = [
   "classes",

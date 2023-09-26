@@ -11,13 +11,11 @@
     <div class="main">
         <div class="title-pages">Niveau logique (MLD)</div>
         <div class="content">
-            La transcription d'un MCD en modèle logique des données ou encore appelé schéma relationnel s'effectue selon quelques règles simples qui consistent d'abord à transformer toute entité en table, avec l'identifiant comme clé primaire, puis à observer les valeurs prises par les cardinalités maximum de chaque association pour représenter celle-ci soit (ex : card. max 1 [1-1 ou 0-1]) par l'ajout d'une clé étrangère dans une table existante, soit (ex : card. max n [0-N ou 1-N]) par la création d'une nouvelle table dont la clé primaire est obtenue par concaténation de clés étrangères correspondant aux entités liées, exemple : <br>
-            PAYS(code_pays) <br>
-            USINE(id_usine, @code_pays, date_implantation) <br>
-            EXPORT(@id_usine, @code_pays) <br>
-            
+            <div class="content-text">La transcription d'un MCD en modèle logique des données ou encore appelé schéma relationnel s'effectue selon quelques règles simples qui consistent d'abord à transformer toute entité en table, avec l'identifiant comme clé primaire, puis à observer les valeurs prises par les cardinalités maximum de chaque association pour représenter celle-ci soit (ex : card. max 1 [1-1 ou 0-1]) par l'ajout d'une clé étrangère dans une table existante, soit (ex : card. max n [0-N ou 1-N]) par la création d'une nouvelle table dont la clé primaire est obtenue par concaténation de clés étrangères correspondant aux entités liées, exemple :</div>
+            <div class="example-text">PAYS(code_pays)
+            USINE(id_usine, @code_pays, date_implantation)
+            EXPORT(@id_usine, @code_pays)</div>  
         </div>
     </div>
-
 </body>
 </html>
