@@ -76,7 +76,7 @@
 
 ## Accessibilité
 
-- [:x:] Accessibilité : title, aria-label, alt
+- [:heavy_check_mark:] Accessibilité : title, aria-label, alt
 - [:x:] Optimisation des images : poids et formats adaptés
 - [:heavy_check_mark:] Fournir un site web avec une bonne expérience utilisateur
 - [:x:] Texte lisible : interlinéage suffisant, taille des polices proportionnelles, contraste des couleurs optimale, ...
