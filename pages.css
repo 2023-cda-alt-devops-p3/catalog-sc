@@ -16,6 +16,7 @@ body{
 
 .main{
     padding-top: 50px;
+    margin-left: 200px;
     height: 100%;
     background-color: #e6e6e6;
     display: flex;
@@ -73,10 +74,11 @@ img{
     
     .main{
         width: 100vw;
-        height: 80vh;
+        height: 100%;
         display: flex;
+        margin-left: 0;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
     }
 
@@ -85,6 +87,6 @@ img{
     }
 
     .content{
-        font-size: 13px;
+        font-size: 12px;
     }
 }
