@@ -1,21 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>États transitions</title>
-    <script src="app.js" defer></script>
-    <link rel="stylesheet" href="pages.css">
-</head>
 <body>
     <div class="main">
+    <div>
         <div class="title-pages">Diagramme états transitions</div>
-        <div class="content">
-            Il est utilisé en génie logiciel pour représenter des automates déterministes. Il fait partie du modèle UML et s'inspire principalement du formalisme des statecharts et rappelle les grafcets des automates. S'ils ne permettent pas de comprendre globalement le fonctionnement du système, ils sont directement transposables en algorithme.
+        <div class="content-pages">
+            <div>Il est utilisé en génie logiciel pour représenter des automates déterministes. Il fait partie du modèle UML et s'inspire principalement du formalisme des statecharts et rappelle les grafcets des automates. S'ils ne permettent pas de comprendre globalement le fonctionnement du système, ils sont directement transposables en algorithme.</div>
+            <div>En effet, contrairement au diagramme d'activité qui aborde le système d'un point de vue global, le diagramme états-transitions cible un objet unique du système. Tous les automates d'un système s'exécutent parallèlement et peuvent donc changer d'état de façon indépendante.</div>
+            <div>En plus des états de départ (au moins un) et d'arrivée (nombre quelconque), une transition peut comporter les éléments facultatifs suivants :</div>
+            <div>
+                <ul>
+                    <li>- Un évènements</li>
+                    <li>- Une condition de garde</li>
+                    <li>- Une liste d'actions</li>
+                </ul>
+            </div>
         </div>
+    </div>
+    <div>
         <div class="example">Exemple</div>
         <img src="img/transitionstate.png" alt="diagramme états transitions">
     </div>
+    </div>
 
 </body>
-</html>

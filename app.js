@@ -28,6 +28,9 @@ function loadContent(linkId) {
     .then((response) => response.text())
     .then((content) => {
       contentContainer.innerHTML = content;
+    })
+    .catch((err) => {
+      console.log("Erreur dans le chargement du contenu :", err);
     });
 }
 
