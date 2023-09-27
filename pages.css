@@ -9,19 +9,18 @@ body{
 }
 
 .title-pages{
-    background-color: #e6e6e6cf;
     font-size: 25px;
     font-weight: 500;
 }
 
 .main{
     padding-top: 50px;
-    margin-left: 200px;
-    height: 100%;
-    background-color: #e6e6e6;
+    height: 100vh;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
+    gap: 50px;
 }
 
 .example{
@@ -56,6 +55,7 @@ body{
     display: flex;
     justify-content: space-around;
     flex-direction: column;
+    gap: 20px;
 }
 
 
