@@ -12,10 +12,19 @@
     <div>
         <div class="title-pages">Niveau physique (MPD)</div>
         <div class="content">
-            Dans la méthode Merise, le modèle physique des données (MPD) consiste à implanter une base de données dans un SGBDR.
-
-            Le langage utilisé pour ce type d'opération est le SQL. On peut également faire usage d'un AGL (PowerAMC, WinDesign, etc.) qui permet de générer automatiquement la base de données.
-            
+            <div>Dans la méthode Merise, le modèle physique des données (MPD) consiste à implanter une base de données dans un SGBDR.
+            Le langage utilisé pour ce type d'opération est le SQL. On peut également faire usage d'un AGL (PowerAMC, WinDesign, etc.) qui permet de générer automatiquement la base de données.</div>
+            <div>L’étape de création du MPD est presque une formalité comparée à la création du MCD. En s’appuyant sur des règles simples (et qui fonctionnent à tous les coups), l’analyste fait évoluer sa modélisation de haut niveau pour la transformer en un schéma plus proche des contraintes des logiciels de bases de données. Il s’agit de préparer l’implémentation dans un SGBDR.</div>
+            <div>Concrètement, cette étape permet de construire la structure finale de la base de données avec les différents liens entre les éléments qui la composent. Pour la peine, on change aussi de vocabulaire :</div>
+            <div>
+                <ul>
+                    <li>- Les entités se transforment en tables ;</li>
+                    <li>- Les propriétés se transforment en champs (ou attributs) ;</li>
+                    <li>- Les propriétés se trouvant au milieu d’une relation génèrent une nouvelle table ou glissent vers la table adéquate en fonction des cardinalités de la relation ;</li>
+                    <li>- Les identifiants se transforment en clés et se retrouvent soulignés. Chaque table dispose d’au minimum 1 clé dite primaire ;</li>
+                    <li>- Les relations et les cardinalités se transforment en champs parfois soulignés : il s’agit de créer des « clés étrangères » reliées à une « clé primaire » dans une autre table.</li>
+                </ul>
+            </div>
         </div>
     </div>
     <div>
