@@ -54,7 +54,6 @@
 - [:heavy_check_mark:] Historique de commit propre => (éviter les doublons, les commits inutiles)
 - [:heavy_check_mark:] Mise en plance d'une branche de développement supplémentaire, voire plusieurs selon l'architecture du site => Vérif sur Git
 - [:heavy_check_mark:] Fonction "pull request" => Check sur Github
-- [:x:] Mise en place un Github Action (automatisation de tests intégration, vulnérabilité, ...) => Check sur Github
 
 ## Sécurité
 
@@ -64,22 +63,22 @@
 
 ## SEO
 
-- [:x:] Mise en place de la stratégie SEO : données structurées, ...
+- [:heavy_check_mark:] Mise en place de la stratégie SEO : données structurées, ...
 - [:x:] PWA (Progressive Web App) : services workers (microphone, localisation, ...)
-- [:x:] HTML sémantique
+- [:heavy_check_mark:] HTML sémantique
 
 ## Performance
 
-- [:x:] Bon résultat sur PageSpeed Insights
-- [:x:] Optimisation images (surtout mobile)
-- [:x:] Limiter le nombre de requêtes
+- [:heavy_check_mark:] Bon résultat sur PageSpeed Insights
+- [:heavy_check_mark:] Optimisation images (surtout mobile)
+- [:heavy_check_mark:] Limiter le nombre de requêtes
 
 ## Accessibilité
 
 - [:heavy_check_mark:] Accessibilité : title, aria-label, alt
 - [:x:] Optimisation des images : poids et formats adaptés
 - [:heavy_check_mark:] Fournir un site web avec une bonne expérience utilisateur
-- [:x:] Texte lisible : interlinéage suffisant, taille des polices proportionnelles, contraste des couleurs optimale, ...
+- [:heavy_check_mark:] Texte lisible : interlinéage suffisant, taille des polices proportionnelles, contraste des couleurs optimale, ...
 
 ## Architecture
 
@@ -88,7 +87,7 @@
 
 ## Contenu
 
-- [:x:] Contenu vérifié : informations croisées, résumé de plusieurs sources, ...
+- [:heavy_check_mark:] Contenu vérifié : informations croisées, résumé de plusieurs sources, ...
 - [:x:] Détail des étapes pour chaque diagramme
 
 ## UI/UX
