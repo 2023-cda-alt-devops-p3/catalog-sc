@@ -138,6 +138,7 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
     gap: 50px;
 }
@@ -247,7 +248,7 @@ i{
 @media screen and (max-width:600px) {
     .wrapper .sidebar-visible{
         top: 0;
-        width: 100%;
+        width: 100vw;
         height: 160vh;
         position: absolute;
         
@@ -263,9 +264,6 @@ i{
         height: 100%;
         display: flex;
         margin-left: 0;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
 
     img{
@@ -274,6 +272,13 @@ i{
 
     .content{
         font-size: 12px;
+    }
+
+
+
+
+    .burger{
+        margin-left: 10px;
     }
 
 }
